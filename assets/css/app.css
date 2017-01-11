@@ -1,0 +1,169 @@
+/* RESET */
+
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    font-weight: normal;
+}
+
+
+/* APP */
+
+body {
+    background: #EFECCA;
+    padding-bottom: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oleo Script', cursive;
+}
+
+hr.style-three {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+footer,
+.margin-30 {
+    margin: 30px 0;
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+margin-top-50 {
+    margin: 50px 0;
+}
+
+
+/* HEADER */
+
+header {
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+header .row {
+    width: 100%
+}
+
+header img {
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.goToTop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+
+/* SLIDER */
+
+#slider {
+    height: auto;
+}
+
+.carousel-inner .item img {
+    width: 100%;
+}
+
+.carousel-caption p,
+.carousel-caption h2 {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.carousel-caption p {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.fa-star {
+    color: #FFD700;
+}
+
+
+/* CONTENT PAGE */
+
+#contentHomePage {
+    margin: 50px auto;
+}
+
+#contentHomePage section {
+    background: #FBFBFB;
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.headerSection,
+.bodySection,
+.footerSection {
+    padding: 20px;
+}
+
+#googleMaps {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+
+footer>div>ul {
+    text-align: center;
+}
+
+footer>div>ul>li {
+    display: inline-block;
+    margin: 0 10px;
+}
