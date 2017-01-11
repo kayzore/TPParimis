@@ -1,3 +1,40 @@
+/* RESET */
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* APP */
+
 body {
     background: #EFECCA
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oleo Script', cursive;
+}
+
+header {
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+header .row {
+    width: 100%
+}
+
+header img {
+    margin: 0 auto;
+    margin-top: 1em;
 }
