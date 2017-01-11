@@ -13,6 +13,11 @@ a:hover {
     color: black;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* APP */
 
@@ -56,9 +61,12 @@ header img {
 
 /* SLIDER */
 
+#slider {
+    height: auto;
+}
+
 .carousel-inner .item img {
     width: 100%;
-    height: 500px;
 }
 
 .carousel-caption p,
@@ -73,4 +81,17 @@ header img {
 
 .fa-star {
     color: #FFD700;
+}
+
+
+/* CONTENT PAGE */
+
+#contentHomePage {
+    margin-top: 30px
+}
+
+#contentHomePage section {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
 }
