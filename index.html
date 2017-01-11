@@ -33,7 +33,7 @@
         </div>
     </header>
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Menu navigation</span>
@@ -41,12 +41,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <i class="fa fa-home" aria-hidden="true"></i> Accueil
-                </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bed" aria-hidden="true"></i> Chambres <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -79,6 +77,17 @@
                             <li><a href="#">Soin Relaxant</a></li>
                             <li><a href="#">Soin Plaisir</a></li>
                             <li><a href="#">Soin Evasion</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-h-square" aria-hidden="true"></i> L'hôtel <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Qui sommes-nous ?</a></li>
+                            <li><a href="#">Accès</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Recrutement</a></li>
+                            <li><a href="#">Evénements</a></li>
+                            <li><a href="#">Presse</a></li>
                         </ul>
                     </li>
                     <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Réservation</a></li>
@@ -142,14 +151,77 @@
         </div>
     </section>
     <div class="container" id="contentHomePage">
-        <section class="col-md-5">
-            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker</p>
-        </section>
-        <section class="col-md-5 col-md-offset-2">
-            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker</p>
-        </section>
+        <div class="row">
+            <section class="col-md-5 noPadding">
+                <div class="headerSection text-center">
+                    <strong><h2 class="noMargin">Bienvenue à Paramis - Paris 8 !</h2></strong>
+                </div>
+                <hr class="noMargin">
+                <div class="bodySection">
+                    <p>
+                        Pour commencer l'année en beauté rien de tel qu'un séjour de quelques jours dans notre bel hôtel.
+                        <br />
+                        <br /> Vous serez logé dans une chambre de la gamme de votre choix incluant plusieurs formules. Un choix divers de cartes vous est proposé et vous pourrez ensuite découvrir notre Spa et profitez de nos soins spécifiques!
+                        <br />
+                        <br /> N'attendez plus et faites votre choix! Dans l'attente de vous rencontrer au sein de notre établissement, nous vous souhaitons un bon début d'année 2017 !
+                    </p>
+                    <img src="assets/img/deluxe.jpg" alt="Chambre deluxe" class="img-responsive" />
+                    <p class="text-center margin-30" style="margin-bottom:0;">
+                        Choississez votre chambre en cliquant içi et réservez votre séjour !
+                    </p>
+                </div>
+            </section>
+            <section class="col-md-5 col-md-offset-2 noPadding">
+                <div class="headerSection text-center">
+                    <h3 class="noMargin">Contact</h3>
+                </div>
+                <hr class="noMargin">
+                <div class="bodySection">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p>
+                                PARIMIS Hôtel 5 étoiles à Paris
+                                <br /> 1 avenue Montaigne
+                                <br /> 75008 Paris
+                                <br /> France
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                                Tel: 01 45 53 88 --
+                                <br /> Fax: 01 45 53 88 --
+                            </p>
+                        </div>
+                    </div>
+                    <iframe id="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d875.8660866747628!2d2.3009530178239292!3d48.865214491345895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0e963be5%3A0xc1eaef86d52e03bb!2s1+Avenue+Montaigne%2C+75008+Paris!5e0!3m2!1sfr!2sfr!4v1484148490016" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
     </div>
+    <hr class="style-three">
+    <div class="container">
+        <footer>
+            <div class="col-md-12">
+                <ul>
+                    <li>Mentions Légales</li>
+                    <li>Conditions Générales de Vente</li>
+                    <li>Plan du site</li>
+                    <li>Imprimer la page</li>
+                    <li>S'inscrire à la newsletter</li>
+                    <li>Partager</li>
+                </ul>
+            </div>
+        </footer>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $(window).bind('scroll', function () {
+                var navHeight = 300; // custom nav height
+                ($(window).scrollTop() > navHeight) ? $('nav').addClass('goToTop'): $('nav').removeClass('goToTop');
+            });
+        });
+    </script>
 </body>
 
 </html>
