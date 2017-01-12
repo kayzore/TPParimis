@@ -3,7 +3,7 @@ $(document).ready(function () {
     "use strict";
     $('#listImageChambre').cycle({
         fx: 'zoom',
-        sync: false,
+        sync: true,
         delay: -3000
     });
 });
