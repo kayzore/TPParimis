@@ -23,6 +23,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/plugins/jquery.cycle.all.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/restaurant.js"></script>
     <script src="assets/js/restaurant-cycle-slide.js"></script>
 </head>
 
@@ -60,16 +61,7 @@
                             <li><a href="chambre-suite.html">Suite</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i> Restaurant <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="active"><a href="restaurant.html">Notre restaurant</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="restaurant.html#brasserie">Carte Brasserie (midi)</a></li>
-                            <li><a href="restaurant.html#degustation">Carte Dégustation (après-midi)</a></li>
-                            <li><a href="restaurant.html#restaurant">Carte Restaurant (soir)</a></li>
-                        </ul>
-                    </li>
+                    <li class="active"><a href="restaurant.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Notre restaurant</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus-square" aria-hidden="true"></i> Le Spa <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -99,11 +91,22 @@
             </div>
         </div>
     </nav>
+
     <div class="container contentPage" role="main">
         <div class="row">
-            <section class="col-xs-12">
+            <aside class="col-md-2 hidden-xs hidden-sm">
+                <div class="text-center">
+                    <h4 class="px-10"><i class="fa fa-map" aria-hidden="true"></i> Nos cartes</h4>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a href="#" id="btnCarteBrasserie">Carte Brasserie</a></li>
+                        <li role="presentation"><a href="#" id="btnCarteDegustation">Carte Dégustation</a></li>
+                        <li role="presentation"><a href="#" id="btnCarteRestaurant">Carte Restaurant</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="col-xs-12 col-md-10">
                 <div class="row text-center">
-                    <div class="col-xs-12 col-sm-12">
+                    <div class="col-xs-12">
                         <h2><i class="fa fa-cutlery" aria-hidden="true"></i> Notre restaurant <i class="fa fa-cutlery" aria-hidden="true"></i></h2>
                     </div>
                 </div>
@@ -119,7 +122,7 @@
                             <br>
                             <br> La carte du chef Jean-Charles Mikel supervisé par Eric Frebedou évolue naturellement au gré des saisons. Outre le service au Restaurant gastronomique, il est possible de prendre des repas plus simples à déguster en terrasse à la belle saison ou dans les chambres ainsi que des collations.
                             <br>
-                            <br> Chose très rare, le restaurant est ouvert toute l’année, tous les jours midi et soir. L’été, il est possible de déjeuner au dans la cours privée de l'hôtel, au milieu de la végétation.
+                            <br> Chose très rare, le restaurant est ouvert toute l’année, tous les jours midi et soir. L’été, il est possible de déjeuner dans la cours privée de l'hôtel, au milieu de la végétation.
                         </p>
                     </div>
                 </div>
@@ -129,29 +132,51 @@
                         <h2><i class="fa fa-map" aria-hidden="true"></i> Nos cartes</h2>
                     </div>
                 </div>
-                <div class="row mb-20">
-                    <span id="brasserie">&nbsp;</span>
-                    <div class="row mx-20">
-                        <div class="col-md-6 col-md-offset-3 mx-20 well">
-                            <h3><i class="fa fa-map-o" aria-hidden="true"></i> Carte Brasserie</h3>
-                            <span class="text-muted">Carte du midi</span>
-                            <embed src="assets/pdf/Menu-Brasserie.pdf" type="application/pdf" class="pdfViewer">
+                <div class="row text-center">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <h3 id="brasserie">Carte Brasserie</h3>
+                            <span class="text-muted">(Carte du midi)</span>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="mx-20">Les entrées « Terre et Mer »</h4>
+                            <p>
+                                32 €	Foie gras de canard de Lanvaux poêlé, poire tapée et glace moutarde à l’ancienne.<br>
+                                <br>
+                                32 €	Langoustines rôties, coquillages, consommé de cucurbitacées légèrement épicé.<br>
+                                <br>
+                                29 €	Saint-Jacques en deux façons, croustillante et grillée, mousseline de navet, sauce persil 29.<br>
+                                <br>
+                                32 €	Tartare de bœuf au couteau, huîtres et caviar Français , œuf toqué, émulsion d’algues
+                            </p>
+                            <h4 class="mx-20">Les huitres</h4>
+                            <p>
+                                27 €	Huîtres creuses N° 2 de la ria de Pénerf élevées par Philippe Le Fond (12 pièces)<br>
+                                <br>
+                                27 €	Huîtres plates du Bélon Ostréa Edulis triple zéro (6 pièces)<br>
+                                <br>
+                                39 €	Grande assiette panachée 6 plates de Bélon et 6 creuses de Pénerf
+                            </p>
+                            <h4 class="mx-20">Le homard en festival</h4>
+                            <p>
+                                40 €	Homard de nos côtes émincé a cru, légumes croquants et sorbet à la spiruline (entrée)<br>
+                                <br>
+                                78 €	Homard de casier au beurre de baratte, sauce coraillée et tagliatelles (recette tradition)<br>
+                                <br>
+                                78 €	Homard bleu laqué à la gelée d’Espelette, légumes d’automne
+                            </p>
                         </div>
                     </div>
-                    <span id="degustation">&nbsp;</span>
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3 mx-20 well">
-                            <h3><i class="fa fa-map-o" aria-hidden="true"></i> Carte Dégustation</h3>
+                        <div class="col-md-6 col-md-offset-3 well">
+                            <h3 id="degustation"><i class="fa fa-map-o" aria-hidden="true"></i> Carte Dégustation</h3>
                             <span class="text-muted">Carte de l'après-midi</span>
-                            <embed src="assets/pdf/Menu-Degustation.pdf" type="application/pdf" class="pdfViewer">
                         </div>
                     </div>
-                    <span id="restaurant">&nbsp;</span>
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3 mx-20 well">
-                            <h3><i class="fa fa-map-o" aria-hidden="true"></i> Carte Restaurant</h3>
+                        <div class="col-md-6 col-md-offset-3 well">
+                            <h3 id="restaurant"><i class="fa fa-map-o" aria-hidden="true"></i> Carte Restaurant</h3>
                             <span class="text-muted">Carte du soir</span>
-                            <embed src="assets/pdf/Menu-Restaurant.pdf" type="application/pdf" class="pdfViewer">
                         </div>
                     </div>
                 </div>
