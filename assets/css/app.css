@@ -163,14 +163,18 @@ header img {
     margin-bottom: 20px;
 }
 
-.imgChambre {
-    max-width: 200px;
-    max-height: 90px;
+div.mix > .thumbnail {
+    min-height: 270px;
 }
 
-.listChambres img {
-    display: inline-block;
-    margin: 10px;
+div.mix > .thumbnail > .caption > h3 {
+    font-size: 2.3em;
+}
+
+.listChambrePrice {
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: underline;
 }
 
 
