@@ -8,7 +8,7 @@
     <meta name="author" content="Jerome Lelievre" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Parimis hôtel, spa, restaurant - Accueil</title>
+    <title>Parimis hôtel, spa, restaurant - Restaurant</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
@@ -21,7 +21,9 @@
     <![endif]-->
     <script src="assets/js/jquery-3.1.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/jquery.cycle.all.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/restaurant-cycle-slide.js"></script>
 </head>
 
 <body>
@@ -58,10 +60,10 @@
                             <li><a href="chambre-suite.html">Suite</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i> Restaurant <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="restaurant.html">Notre restaurant</a></li>
+                            <li class="active"><a href="restaurant.html">Notre restaurant</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="restaurant.html#brasserie">Carte Brasserie (midi)</a></li>
                             <li><a href="restaurant.html#degustation">Carte Dégustation (après-midi)</a></li>
@@ -98,6 +100,63 @@
         </div>
     </nav>
     <div class="container contentPage" role="main">
+        <div class="row">
+            <section class="col-xs-12">
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-12">
+                        <h2><i class="fa fa-cutlery" aria-hidden="true"></i> Notre restaurant <i class="fa fa-cutlery" aria-hidden="true"></i></h2>
+                    </div>
+                </div>
+                <div id="listImageRestaurant" class="row listImageRestaurant">
+                    <img src="assets/img/restaurant.jpg" class="img-responsive" alt="Restaurant">
+                    <img src="assets/img/restaurant2.jpg" class="img-responsive" alt="Restaurant">
+                    <img src="assets/img/restaurant3.jpg" class="img-responsive" alt="Restaurant">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 mx-20">
+                        <p class="well">
+                            Distingué par tous les guides gastronomiques de renom, le Restaurant gastronomique du Parimis vous invite à découvrir sa quête patiente des produits préparés dans le respect de la nature et du travail d’hommes et de femmes passionnés.
+                            <br>
+                            <br> La carte du chef Jean-Charles Mikel supervisé par Eric Frebedou évolue naturellement au gré des saisons. Outre le service au Restaurant gastronomique, il est possible de prendre des repas plus simples à déguster en terrasse à la belle saison ou dans les chambres ainsi que des collations.
+                            <br>
+                            <br> Chose très rare, le restaurant est ouvert toute l’année, tous les jours midi et soir. L’été, il est possible de déjeuner au dans la cours privée de l'hôtel, au milieu de la végétation.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-12">
+                        <h2><i class="fa fa-map" aria-hidden="true"></i> Nos cartes</h2>
+                    </div>
+                </div>
+                <div class="row mb-20">
+                    <span id="brasserie">&nbsp;</span>
+                    <div class="row mx-20">
+                        <div class="col-md-6 col-md-offset-3 mx-20 well">
+                            <h3><i class="fa fa-map-o" aria-hidden="true"></i> Carte Brasserie</h3>
+                            <span class="text-muted">Carte du midi</span>
+                            <embed src="assets/pdf/Menu-Brasserie.pdf" type="application/pdf" class="pdfViewer">
+                        </div>
+                    </div>
+                    <span id="degustation">&nbsp;</span>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 mx-20 well">
+                            <h3><i class="fa fa-map-o" aria-hidden="true"></i> Carte Dégustation</h3>
+                            <span class="text-muted">Carte de l'après-midi</span>
+                            <embed src="assets/pdf/Menu-Degustation.pdf" type="application/pdf" class="pdfViewer">
+                        </div>
+                    </div>
+                    <span id="restaurant">&nbsp;</span>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 mx-20 well">
+                            <h3><i class="fa fa-map-o" aria-hidden="true"></i> Carte Restaurant</h3>
+                            <span class="text-muted">Carte du soir</span>
+                            <embed src="assets/pdf/Menu-Restaurant.pdf" type="application/pdf" class="pdfViewer">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
     <hr class="style-three">
     <div class="container" role="contentinfo">
