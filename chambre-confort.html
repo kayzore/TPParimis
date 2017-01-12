@@ -8,7 +8,7 @@
     <meta name="author" content="Jerome Lelievre" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Parimis hôtel, spa, restaurant - Accueil</title>
+    <title>Parimis hôtel, spa, restaurant - Chambre Confort</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
@@ -21,7 +21,9 @@
     <![endif]-->
     <script src="assets/js/jquery-3.1.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/jquery.cycle.all.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/chambres-cycle-slide.js"></script>
 </head>
 
 <body>
@@ -47,13 +49,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a></li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bed" aria-hidden="true"></i> Chambres <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="chambres.html">Toutes les gammes</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="chambre-classique.html">Classique</a></li>
-                            <li><a href="chambre-confort.html">Confort</a></li>
+                            <li class="active"><a href="chambre-confort.html">Confort</a></li>
                             <li><a href="chambre-deluxe.html">Deluxe</a></li>
                             <li><a href="chambre-suite.html">Suite</a></li>
                         </ul>
@@ -98,6 +100,47 @@
         </div>
     </nav>
     <div class="container contentPage" role="main">
+        <section class="col-xs-12">
+            <div class="row text-center mx-20">
+                <h2 class="noMargin">Chambre Confort</h2>
+            </div>
+            <div class="row mx-20">
+                <div class="col-md-7">
+                    <p>
+                        Les chambres Confort de 22 à 23,5 m², extrêmement confortables et raffinées vous offrent une vue sur notre cour intérieure fleurie. Calmes et relaxantes, les chambres Confort vous séduiront par leur décor contemporain.
+                        <br> Les chambres Confort sont prolongées d’une pièce d’eau en mosaïque, avec Baignoire et / ou Douche et vasque.
+                        <br> Possibilité de chambre communicante avec chambre Classique pour faire une Suite.
+                        <br> L'ajout d'un lit supplémentaire n'est pas possible dans cette catégorie de chambre.
+                        <br>
+                        <br> - 24 m²,
+                        <br> - 1 à 2 personnes,
+                        <br> - Lit King Size ou Twin,
+                        <br> - Produits de Salle de Bain offerts,
+                        <br> - Toilettes Japonaises,
+                        <br> - Pèse-personne électronique et sèche-cheveux,
+                        <br> - Peignoirs et chaussons,
+                        <br> - Mini Bar,
+                        <br> - Station Smartphone / Tablette, Klipsch Music Center,
+                        <br> - TV HD avec un large choix de chaine internationales avec VOD offert,
+                        <br> - Carte des Oreillers,
+                        <br> - Coffee Set avec Bouilloire et Thés Kusmi Tea Paris, Machine à Café Expresso Malongo,
+                        <br> - Accès internet haut debit offert sans fil.
+                    </p>
+                </div>
+                <div class="col-md-4 pull-right mr-20 text-center">
+                    <div id="listImageChambre" class="row listImageChambre">
+                        <img src="assets/img/confort.jpg" class="img-responsive" alt="Chambre Confort">
+                        <img src="assets/img/confort2.jpg" class="img-responsive" alt="Chambre Confort">
+                        <img src="assets/img/confort3.jpg" class="img-responsive" alt="Chambre Confort">
+                    </div>
+
+                    <div class="row margin-10">
+                        <p class="listChambrePrice">A partir de 237 €</p>
+                        <a href="#" class="btn btn-primary"><i class="fa fa-calendar" aria-hidden="true"></i> Réserver dans cette gamme</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <hr class="style-three">
     <div class="container" role="contentinfo">
