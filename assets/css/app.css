@@ -272,6 +272,11 @@ div.mix > .thumbnail > .caption > h3 {
     cursor: pointer;
 }
 
+textarea {
+    resize: vertical;
+    width: 100%
+}
+
 
 /* FOOTER */
 
