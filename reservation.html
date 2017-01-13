@@ -8,11 +8,7 @@
     <meta name="author" content="Jerome Lelievre" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-<<<<<<< HEAD
-    <title>Parimis hôtel, spa, restaurant - Accueil</title>
-=======
     <title>Parimis hôtel, spa, restaurant - Réservation</title>
->>>>>>> hotfix/Edit_title_page_reservation
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
@@ -84,29 +80,33 @@
                 <fieldset>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-xs-12 col-sm-4 control-label" for="textinput">Date d'arrivée</label>
+                        <label class="col-xs-12 col-sm-4 control-label" for="dateEnterInput">Date d'arrivée</label>
                         <div class="col-xs-12 col-sm-4">
-                            <input id="textinput" name="textinput" placeholder="13/01/2017" class="form-control input-md datepicker" type="text">
+                            <input id="dateEnterInput" name="textinput" placeholder="13/01/2017" class="form-control input-md datepicker" type="text">
                         </div>
                     </div>
 
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-xs-12 col-sm-4 control-label" for="textinput">Date de départ</label>
+                        <label class="col-xs-12 col-sm-4 control-label" for="dateExitInput">Date de départ</label>
                         <div class="col-xs-12 col-sm-4">
-                            <input id="textinput" name="textinput" placeholder="14/01/2017" class="form-control input-md datepicker" type="text">
+                            <input id="dateExitInput" name="textinput" placeholder="14/01/2017" class="form-control input-md datepicker" type="text">
                         </div>
                     </div>
 
                     <!-- Select Basic -->
                     <div class="form-group">
-                        <label class="col-xs-12 col-sm-4 control-label" for="selectbasic">Gamme de chambre</label>
+                        <label class="col-xs-12 col-sm-4 control-label" for="selectGammeBedroom">Gamme de chambre</label>
                         <div class="col-xs-12 col-sm-4">
-                            <select id="selectbasic" name="selectbasic" class="form-control">
-                                <option value="1">Chambre Classique</option>
-                                <option value="2">Chambre Confort</option>
-                                <option value="3">Chambre Deluxe</option>
-                                <option value="4">Chambre Suite</option>
+                            <select id="selectGammeBedroom" name="selectbasic" class="form-control">
+                                <option value="1">Chambre Classique 1</option>
+                                <option value="2">Chambre Classique 2 (Communiquante avec confort)</option>
+                                <option value="3">Chambre Confort 1</option>
+                                <option value="4">Chambre Confort 2 (Communiquante avec classique)</option>
+                                <option value="5">Chambre Deluxe 1</option>
+                                <option value="6">Chambre Deluxe 2 (+ 10m2 + balcon)</option>
+                                <option value="7">Chambre Suite 1</option>
+                                <option value="8">Chambre Suite 2 (+ 10m²)</option>
                             </select>
                         </div>
                     </div>
@@ -170,9 +170,9 @@
 
                     <!-- Select Basic -->
                     <div class="form-group">
-                        <label class="col-sm-4 control-label" for="selectbasic">Civilité</label>
+                        <label class="col-sm-4 control-label" for="selectCiv">Civilité</label>
                         <div class="col-sm-2">
-                            <select id="selectbasic" name="selectbasic" class="form-control">
+                            <select id="selectCiv" name="selectbasic" class="form-control">
                                 <option value="1">Mr</option>
                                 <option value="2">Mme</option>
                             </select>
