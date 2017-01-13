@@ -12,30 +12,48 @@ $(document).ready(function () {
         ($(window).scrollTop() > affixHeight) ? $('aside>div').addClass('goAffixTop'): $('aside>div').removeClass('goAffixTop');
     });
 
-    $('a#btnCarteBrasserie').click(function (evt) {
+    $('a#btnSoinsDetente').click(function (evt) {
         evt.preventDefault();
         removeActive();
         $(this.parentNode).addClass('active');
         $('html, body').animate({
-            scrollTop: $('#brasserie').offset().top - 100
+            scrollTop: $('#detente').offset().top - 175
         }, 2000);
     });
 
-    $('a#btnCarteDegustation').click(function (evt) {
+    $('a#btnSoinsDecouverte').click(function (evt) {
         evt.preventDefault();
         removeActive();
         $(this.parentNode).addClass('active');
         $('html, body').animate({
-            scrollTop: $('#degustation').offset().top - 100
+            scrollTop: $('#decouverte').offset().top - 175
         }, 2000);
     });
 
-    $('a#btnCarteRestaurant').click(function (evt) {
+    $('a#btnSoinsRelaxant').click(function (evt) {
         evt.preventDefault();
         removeActive();
         $(this.parentNode).addClass('active');
         $('html, body').animate({
-            scrollTop: $('#restaurant').offset().top - 100
+            scrollTop: $('#relaxant').offset().top - 175
+        }, 2000);
+    });
+
+    $('a#btnSoinsPlaisir').click(function (evt) {
+        evt.preventDefault();
+        removeActive();
+        $(this.parentNode).addClass('active');
+        $('html, body').animate({
+            scrollTop: $('#plaisir').offset().top - 175
+        }, 2000);
+    });
+
+    $('a#btnSoinsEvasion').click(function (evt) {
+        evt.preventDefault();
+        removeActive();
+        $(this.parentNode).addClass('active');
+        $('html, body').animate({
+            scrollTop: $('#evasion').offset().top - 175
         }, 2000);
     });
 

@@ -39,6 +39,10 @@ h6 {
     font-family: 'Oleo Script', cursive;
 }
 
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
 .mb-20 {
     margin-bottom: 30px;
 }
@@ -56,6 +60,11 @@ h6 {
     margin-right: 10px;
     margin-left: 10px;
 }
+
+.mt-40 {
+    margin-top: 40px;
+}
+
 .px-10 {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -70,6 +79,26 @@ hr.style-three {
     border: 0;
     border-bottom: 1px dashed #ccc;
     background: #999;
+}
+
+hr.style-seven {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+hr.style-seven:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
 }
 
 footer,
@@ -87,6 +116,22 @@ footer,
 
 .margin-top-50 {
     margin: 50px 0;
+}
+
+.border-t {
+    border-top: 1px dashed darkgrey;
+}
+
+.border-b {
+    border-bottom: 1px dashed darkgrey;
+}
+
+.border-r {
+    border-right: 1px dashed darkgrey;
+}
+
+.border-l {
+    border-left: 1px dashed darkgrey;
 }
 
 
@@ -165,7 +210,8 @@ header img {
 
 /* CONTENT PAGE */
 
-.contentPage section, .contentPage aside>div {
+.contentPage section,
+.contentPage aside>div {
     background: #FBFBFB;
     border-radius: 5px;
     -webkit-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
@@ -173,6 +219,14 @@ header img {
     box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+#hotelContact {
+    background: #FBFBFB;
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
 }
 
 .headerSection,
@@ -202,6 +256,24 @@ div.mix > .thumbnail > .caption > h3 {
 }
 
 #listImageRestaurant>img {
+    width: 100%
+}
+
+#listImageSpa>img {
+    width: 100%
+}
+
+.youtube {
+    width: 100%;
+    height: 315px;
+}
+
+.magazine:hover {
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
     width: 100%
 }
 
