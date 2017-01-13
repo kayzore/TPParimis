@@ -1,8 +1,9 @@
+/*global $*/
 $(document).ready(function () {
     "use strict";
     var removeActive;
 
-    if($(window).scrollTop() > 0) {
+    if ($(window).scrollTop() > 0) {
         $('aside>div').addClass('goAffixTop');
     }
 
@@ -11,28 +12,34 @@ $(document).ready(function () {
         ($(window).scrollTop() > affixHeight) ? $('aside>div').addClass('goAffixTop'): $('aside>div').removeClass('goAffixTop');
     });
 
-    $('a#btnCarteBrasserie').click(function(evt) {
+    $('a#btnCarteBrasserie').click(function (evt) {
         evt.preventDefault();
         removeActive();
         $(this.parentNode).addClass('active');
-        $('html, body').animate({scrollTop: $('#brasserie').offset().top - 125}, 2000);
+        $('html, body').animate({
+            scrollTop: $('#brasserie').offset().top - 100
+        }, 2000);
     });
 
-    $('a#btnCarteDegustation').click(function(evt) {
+    $('a#btnCarteDegustation').click(function (evt) {
         evt.preventDefault();
         removeActive();
         $(this.parentNode).addClass('active');
-        $('html, body').animate({scrollTop: $('#degustation').offset().top - 125}, 2000);
+        $('html, body').animate({
+            scrollTop: $('#degustation').offset().top - 100
+        }, 2000);
     });
 
-    $('a#btnCarteRestaurant').click(function(evt) {
+    $('a#btnCarteRestaurant').click(function (evt) {
         evt.preventDefault();
         removeActive();
         $(this.parentNode).addClass('active');
-        $('html, body').animate({scrollTop: $('#restaurant').offset().top - 125}, 2000);
+        $('html, body').animate({
+            scrollTop: $('#restaurant').offset().top - 100
+        }, 2000);
     });
 
-    removeActive =function removeActive() {
+    removeActive = function removeActive() {
         $('aside .active').removeClass('active');
-    }
+    };
 });
