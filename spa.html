@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="hotel luxe 5 etoiles parimis palace paris 8" />
+    <meta name="description" content="Parimis est un hôtel spa et restaurant 5 étoiles situé dans le 8ème arrondissement de Paris" />
+    <meta name="author" content="Jerome Lelievre" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parimis hôtel, spa, restaurant - Le Spa</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/plugins/jquery.cycle.all.js"></script>
+    <script src="assets/js/spa-cycle-slide.js"></script>
+    <script src="assets/js/spa.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="index.html">
+                    <img src="assets/img/header5.png" alt="Hotel Parimis" class="img-responsive" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Menu navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bed" aria-hidden="true"></i> Chambres <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="chambres.html">Toutes les gammes</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="chambre-classique.html">Classique</a></li>
+                            <li><a href="chambre-confort.html">Confort</a></li>
+                            <li><a href="chambre-deluxe.html">Deluxe</a></li>
+                            <li><a href="chambre-suite.html">Suite</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="restaurant.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Notre restaurant</a></li>
+                    <li class="active"><a href="spa.html"><i class="fa fa-plus-square" aria-hidden="true"></i> Le Spa</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-h-square" aria-hidden="true"></i> L'hôtel <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Qui sommes-nous ?</a></li>
+                            <li><a href="#">Accès</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Recrutement</a></li>
+                            <li><a href="#">Evénements</a></li>
+                            <li><a href="#">Presse</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Réservation</a></li>
+                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container contentPage" role="main">
+
+        <div class="row">
+            <aside class="col-md-2 hidden-xs hidden-sm">
+                <div class="text-center">
+                    <h4 class="px-10"><i class="fa fa-medkit" aria-hidden="true"></i> Nos soins</h4>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a href="#" id="btnSoinsDetente">Soin détente</a></li>
+                        <li role="presentation"><a href="#" id="btnSoinsDecouverte">Soin découverte</a></li>
+                        <li role="presentation"><a href="#" id="btnSoinsRelaxant">Soins relaxant</a></li>
+                        <li role="presentation"><a href="#" id="btnSoinsPlaisir">Soin plaisir</a></li>
+                        <li role="presentation"><a href="#" id="btnSoinsEvasion">Soins évasion</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="col-xs-12 col-md-10">
+                <div class="row text-center">
+                    <div class="col-xs-12">
+                        <h2><i class="fa fa-cutlery" aria-hidden="true"></i> Le Spa <i class="fa fa-cutlery" aria-hidden="true"></i></h2>
+                    </div>
+                </div>
+                <div id="listImageSpa" class="row listImageSpa">
+                    <img src="assets/img/spa1.jpg" class="img-responsive" alt="Spa">
+                    <img src="assets/img/spa2.jpg" class="img-responsive" alt="Spa">
+                    <img src="assets/img/spa3.jpg" class="img-responsive" alt="Spa">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 mx-20">
+                        <p class="well">
+                            Temple du bien-être et de la beauté contemporaine, le spa de PARIMIS, offre un havre de paix et de détente unique au cœur de la ville Lumière. Paradis blanc de 1500 m², il abrite une piscine de 23 m de long, la plus grande jamais réalisée dans un Palace à Paris. Ses rituels de soins exclusifs, son équipe de coaching fitness, ses espaces détente avec hammam, laconium et sauna imposent ce spa comme le temple du luxe sur mesure. L’accès est direct depuis chaque étage.
+                            <br>
+                            <br> Des soins modulés et personnalisés: gommages, massages et enveloppements... Toute une gamme de soins, prodigués par des thérapeutes qualifiées, dont les noms même sont source d'enchantement : « Bulle de détente ».
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-12">
+                        <h2><i class="fa fa-medkit" aria-hidden="true"></i> Nos soins</h2>
+                    </div>
+                </div>
+                <div class="row text-center mb-20">
+                    <div class="col-xs-12">
+                        <hr class="style-seven">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3 id="detente">Soins Détente</h3>
+                                <span class="text-muted">60 min - 90€</span>
+                                <p>
+                                    Un massage expert qui vous apporte détente ou énergie selon vos besoins.Le rythme est relaxant, les mouvements sont fluides et permettent de nourrir le corps en profondeur.
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <img src="assets/img/soins1.jpg" alt="Soins" class="img-responsive" />
+                            </div>
+                        </div>
+                        <hr class="style-seven mt-40 mb-10">
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="row hidden-xs hidden-sm">
+                            <div class="col-md-8">
+                                <img src="assets/img/soins2.jpg" alt="Soins" class="img-responsive" />
+                            </div>
+                            <div class="col-md-4 ">
+                                <h3 id="decouverte">Soins Découverte</h3>
+                                <span class="text-muted">90 min - 140€</span>
+                                <p>
+                                    Choisissez le modelage vitalité pour raffermir cuisses, ventre, bras. Pétrissages et lissages s'alternent sur chaque zone de votre corps et stimulent leur tonicité.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row visible-xs visible-sm">
+                            <div class="col-md-4 ">
+                                <h3>Soins Découverte</h3>
+                                <span class="text-muted">90 min - 140€</span>
+                                <p>
+                                    Choisissez le modelage vitalité pour raffermir cuisses, ventre, bras. Pétrissages et lissages s'alternent sur chaque zone de votre corps et stimulent leur tonicité.
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <img src="assets/img/soins2.jpg" alt="Soins" class="img-responsive" />
+                            </div>
+                        </div>
+                        <hr class="style-seven mt-40 mb-10">
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3 id="relaxant">Soins Relaxant</h3>
+                                <span class="text-muted">90 min - 180€</span>
+                                <p>
+                                    Choisissez le modelage relaxant pour détendre intensément les zones contractées. Les effleurages enveloppants détendent votre corps et dénouent les tensions.
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <img src="assets/img/soins3.jpg" alt="Soins" class="img-responsive" />
+                            </div>
+                        </div>
+                        <hr class="style-seven mt-40 mb-10">
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="row hidden-xs hidden-sm">
+                            <div class="col-md-8">
+                                <img src="assets/img/soins4.jpg" alt="Soins" class="img-responsive" />
+                            </div>
+                            <div class="col-md-4">
+                                <h3 id="plaisir">Soins Plaisir</h3>
+                                <span class="text-muted">60 min - 100€</span>
+                                <p>
+                                    Ce massage, dynamise l'ensemble du système énergétique du corps pour un moment de plaisir.Votre peau est plus lisse, idéalement nourrie et souple.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row visible-xs visible-sm">
+                            <div class="col-md-4">
+                                <h3>Soins Plaisir</h3>
+                                <span class="text-muted">60 min - 100€</span>
+                                <p>
+                                    Ce massage, dynamise l'ensemble du système énergétique du corps pour un moment de plaisir.Votre peau est plus lisse, idéalement nourrie et souple.
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <img src="assets/img/soins4.jpg" alt="Soins" class="img-responsive" />
+                            </div>
+                        </div>
+                        <hr class="style-seven mt-40 mb-10">
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3 id="evasion">Soins Evasion</h3>
+                                <span class="text-muted">120 min - 220€</span>
+                                <p>
+                                    Pour une évasion aux notes boisées et fraîches au gré de l'humeur, gommage ou modelage. Vous êtes totalement relaxée et repartez comme sur un petit nuage !
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <img src="assets/img/soins5.jpg" alt="Soins" class="img-responsive" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <hr class="style-three">
+    <div class="container" role="contentinfo">
+        <footer>
+            <div class="col-md-12">
+                <ul>
+                    <li>Mentions Légales</li>
+                    <li>Conditions Générales de Vente</li>
+                    <li>Plan du site</li>
+                    <li>Imprimer la page</li>
+                    <li>S'inscrire à la newsletter</li>
+                    <li>Partager</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
