@@ -118,6 +118,22 @@ footer,
     margin: 50px 0;
 }
 
+.border-t {
+    border-top: 1px dashed darkgrey;
+}
+
+.border-b {
+    border-bottom: 1px dashed darkgrey;
+}
+
+.border-r {
+    border-right: 1px dashed darkgrey;
+}
+
+.border-l {
+    border-left: 1px dashed darkgrey;
+}
+
 
 /* HEADER */
 
@@ -205,6 +221,14 @@ header img {
     margin-bottom: 50px;
 }
 
+#hotelContact {
+    background: #FBFBFB;
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
+}
+
 .headerSection,
 .bodySection,
 .footerSection {
@@ -237,6 +261,15 @@ div.mix > .thumbnail > .caption > h3 {
 
 #listImageSpa>img {
     width: 100%
+}
+
+.youtube {
+    width: 100%;
+    height: 315px;
+}
+
+.magazine:hover {
+    cursor: pointer;
 }
 
 

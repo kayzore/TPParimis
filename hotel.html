@@ -22,6 +22,7 @@
     <script src="assets/js/jquery-3.1.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/hotel.js"></script>
 </head>
 
 <body>
@@ -68,6 +69,216 @@
         </div>
     </nav>
     <div class="container contentPage" role="main">
+        <section class="col-xs-12">
+            <div class="row">
+                <article class="col-xs-12 col-lg-6 border-b" style="min-height:490px;">
+                    <div class="col-xs-12 text-center">
+                        <h2>Qui somme-nous ?</h2>
+                        <h4>Un nouvel hôtel 5 étoiles au coeur de Paris</h4>
+
+                        <p>
+                            Imaginez une adresse confidentielle à deux pas du Palais de l’Elysée, de la place de la Concorde et des Champs-Elysées, à mi-chemin entre l’Avenue Montaigne et le Faubourg Saint-Honoré...
+                            <br>
+                            <br> Imaginez une vue où la cime des arbres, ondoyante aux couleurs changeantes, sert de premier plan à la majesté immuable de la Tour Eiffel, du Grand Palais, du Panthéon et de l‘Obélisque de La Concorde...
+                            <br>
+                            <br> Imaginez un intérieur signé Jacques Garcia dans l’esprit club, chic et raffiné de Michel Reybier, quintessence d’un luxe non ostentatoire...
+                            <br>
+                            <br> Imaginez un séjour où l’art de vivre à la française s’exprime avec élégance et simplicité grâce aux services ultra-personnalisés qui vous sont réservés...
+                            <br>
+                            <br> En 2017, ce rêve devient réalité. Martin Dugommier ouvre PARIMIS Paris, un hôtel 5 étoiles, idéalement placé au coeur de Paris : 1 avenue de Montaigne 75008 Paris
+                        </p>
+                    </div>
+                </article>
+                <article class="col-xs-12 col-lg-6 border-b border-l text-center">
+                    <h2>Accès</h2>
+                    <iframe class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d875.8660866747628!2d2.3009530178239292!3d48.865214491345895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0e963be5%3A0xc1eaef86d52e03bb!2s1+Avenue+Montaigne%2C+75008+Paris!5e0!3m2!1sfr!2sfr!4v1484148490016" style="border:0" allowfullscreen></iframe>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-xs-12 col-lg-6 border-r border-b" style="min-height:735px;">
+                    <div class="col-xs-12 text-center">
+                        <h2>Recrutement</h2>
+                        <form class="form-horizontal">
+                            <fieldset>
+
+                                <!-- Form Name -->
+                                <legend>Votre carrière chez Parimis, nous rejoindre !</legend>
+                                <p class="mb-20">
+                                    Bienvenue à l'hôtel Parimis Paris, un palace d'exception vivant et généreux. Rejoignez nos équipes et bénéficiez d'une expérience unique où l'excellence du service, le contact humain et le souci du détail font partie de nos valeurs.</p>
+                                <!-- Select Basic -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="selectbasic">Civilité</label>
+                                    <div class="col-md-2">
+                                        <select id="selectbasic" name="selectbasic" class="form-control">
+                                            <option value="1">Mr</option>
+                                            <option value="2">Mme</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="nom">Nom</label>
+                                    <div class="col-md-8">
+                                        <input id="nom" name="nom" placeholder="Votre nom" class="form-control input-md" required="" type="text">
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="prenom">Votre prénom</label>
+                                    <div class="col-md-8">
+                                        <input id="prenom" name="prenom" placeholder="Votre prénom" class="form-control input-md" required="" type="text">
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="email">Email</label>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" placeholder="Votre email" class="form-control input-md" required="" type="text">
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="emailconfirm">Email confirmation</label>
+                                    <div class="col-md-8">
+                                        <input id="emailconfirm" name="emailconfirm" placeholder="Confirmation de votre email" class="form-control input-md" required="" type="text">
+                                    </div>
+                                </div>
+
+                                <!-- File Button -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="fileCv">CV</label>
+                                    <div class="col-md-4">
+                                        <input id="fileCv" name="fileCv" class="input-file" type="file">
+                                    </div>
+                                </div>
+
+                                <!-- File Button -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="fileMotivation">Lettre de motivation</label>
+                                    <div class="col-md-4">
+                                        <input id="fileMotivation" name="fileMotivation" class="input-file" type="file">
+                                    </div>
+                                </div>
+
+                                <!-- Textarea -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="message">Message</label>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" name="message"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Button -->
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Envoyer</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </article>
+                <article class="col-xs-12 col-lg-6 border-b">
+                    <div class="col-xs-12 text-center">
+                        <h2>Evénements</h2>
+                        <h4>Location de salle de séminaire à Paris</h4>
+                        <p>
+                            Hôtel de séminaire, PARIMIS Paris dispose de l'équipement adéquat pour l'organisation de votre réunion, conférence ou formation. Idéalement situé au cœur d'un nœud de communication, l'hôtel 5 étoiles est desservi tant par le train, le RER, le métro que le bus. Vous rejoindrez ainsi rapidement les principaux centres d'affaires parisiens, ainsi que les aéroports de Roissy Charles De Gaulle et de Paris Orly.
+                        </p>
+                        <h4>Réceptions et conférences à Paris</h4>
+                        <p>
+                            L'hôtel PARIMIS Paris compte 12 salles de réunion parfaitement équipées pour organiser des événements à caractère festif ou professionnel. Les salles, au décor raffiné et pour certaines au cachet singulier, peuvent accueillir des groupes allant de 20 à 200 personnes. La plupart d'entre elles bénéficient d'un éclairage naturel. Ces salles offrent les services complets de restauration et d'affaires dont l'hôtel est doté. Elles sont équipées du matériel dernier cri en matière de technologie audiovisuelle et constituent le cadre parfait pour tout séminaire, conférence ou réunion à Paris.
+                        </p>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/mxUYYSh_Rh0" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-xs-12">
+                    <div class="col-xs-12 text-center mb-20">
+                        <h2>Presse</h2>
+                        <h4>On parle de nous !</h4>
+                        <p class="mb-20">
+                            Nous vous invitons à cliquer sur les communiqués ou articles de presse ci-dessous afin de découvrir les dernières actualités de l'hôtel Parimis, hôtel 5 étoiles à Paris.
+                            <br> Veuillez nous contacter pour obtenir nos visuels en Haute Définition.
+                        </p>
+                        <div class="col-xs-4">
+                            <img src="assets/img/mag1.jpg" alt="Magazine" class="img-responsive center-block magazine" id="mag1">
+                            <div class="modal fade" id="magModal1" tabindex="-1" role="dialog" aria-labelledby="ModalMagasine1">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">L'expansion</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/img/mag1.jpg" alt="Magazine" class="img-responsive center-block">
+                                            <p>
+                                                Extrait :
+                                                <br> Parimis assure dans l'hôtellerie de luxe, Découvrez les sans plus attendre...
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="assets/img/mag2.jpg" alt="Magazine" class="img-responsive center-block magazine" id="mag2">
+                            <div class="modal fade" id="magModal2" tabindex="-1" role="dialog" aria-labelledby="ModalMagasine1">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Téléstart Cuisine</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/img/mag2.jpg" alt="Magazine" class="img-responsive center-block">
+                                            <p>
+                                                Extrait :
+                                                <br> La cuisine des chefs de PARIMIS est à savourer ! RIEN A RAJOUTER !
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="assets/img/mag3.jpg" alt="Magazine" class="img-responsive center-block magazine" id="mag3">
+                            <div class="modal fade" id="magModal3" tabindex="-1" role="dialog" aria-labelledby="ModalMagasine1">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Le Figaro Magazine</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/img/mag3.jpg" alt="Magazine" class="img-responsive center-block">
+                                            <p>
+                                                Extrait :
+                                                <br> Parimis le plus glamour des hôtel, exclusif en france !
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </div>
     <hr class="style-three">
     <div class="container" role="contentinfo">
