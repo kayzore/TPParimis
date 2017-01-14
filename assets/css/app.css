@@ -75,6 +75,10 @@ h6 {
     margin-bottom: 10px;
 }
 
+.padding-10 {
+    padding: 10px;
+}
+
 hr.style-three {
     border: 0;
     border-bottom: 1px dashed #ccc;
@@ -203,8 +207,8 @@ header img {
     font-weight: bold;
 }
 
-.fa-star {
-    color: #FFD700;
+.fa-star, .fa-star-half-o, .fa-star-o {
+    color: #E2BB49;
 }
 
 
@@ -277,6 +281,23 @@ textarea {
     width: 100%
 }
 
+.media {
+    border: 1px dashed black;
+    padding: 20px;
+}
+
+.link-custom {
+    background: darkgrey;
+    border-radius: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.link-custom:hover {
+    background: #E2BB49;
+    transition: all 0.3s linear;
+}
+
 
 /* FOOTER */
 
@@ -287,4 +308,15 @@ footer>div>ul {
 footer>div>ul>li {
     display: inline-block;
     margin: 0 10px;
+    padding: 10px;
+ }
+
+footer>div>ul>li:hover {
+    background: darkgrey;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
 }
