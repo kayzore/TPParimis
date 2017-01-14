@@ -203,8 +203,8 @@ header img {
     font-weight: bold;
 }
 
-.fa-star {
-    color: #FFD700;
+.fa-star, .fa-star-half-o, .fa-star-o {
+    color: #E2BB49;
 }
 
 
@@ -277,6 +277,11 @@ textarea {
     width: 100%
 }
 
+.media {
+    border: 1px dashed black;
+    padding: 20px;
+}
+
 
 /* FOOTER */
 
@@ -287,4 +292,12 @@ footer>div>ul {
 footer>div>ul>li {
     display: inline-block;
     margin: 0 10px;
+    padding: 10px;
+ }
+
+footer>div>ul>li:hover {
+    background: darkgrey;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
