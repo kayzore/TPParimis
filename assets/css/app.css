@@ -75,6 +75,10 @@ h6 {
     margin-bottom: 10px;
 }
 
+.padding-10 {
+    padding: 10px;
+}
+
 hr.style-three {
     border: 0;
     border-bottom: 1px dashed #ccc;
@@ -282,6 +286,18 @@ textarea {
     padding: 20px;
 }
 
+.link-custom {
+    background: darkgrey;
+    border-radius: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.link-custom:hover {
+    background: #E2BB49;
+    transition: all 0.3s linear;
+}
+
 
 /* FOOTER */
 
@@ -300,4 +316,7 @@ footer>div>ul>li:hover {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
 }
