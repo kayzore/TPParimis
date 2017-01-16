@@ -298,6 +298,14 @@ textarea {
 .link-custom:hover {
     background: #E2BB49;
     transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    /* opera */
+    -ms-transition: all 0.3s linear;
+    /* IE 10 */
+    -moz-transition: all 0.3s linear;
+    /* Firefox */
+    -webkit-transition: all 0.3s linear;
+    /*safari and chrome */
 }
 
 #btnGoTop {
@@ -311,6 +319,14 @@ textarea {
 
 #btnGoTop:hover {
     transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    /* opera */
+    -ms-transition: all 0.5s linear;
+    /* IE 10 */
+    -moz-transition: all 0.5s linear;
+    /* Firefox */
+    -webkit-transition: all 0.5s linear;
+    /*safari and chrome */
     color: dimgray;
 }
 
@@ -355,4 +371,76 @@ footer>div>ul>li:hover {
     -moz-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
     box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
     transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    /* opera */
+    -ms-transition: all 0.8s linear;
+    /* IE 10 */
+    -moz-transition: all 0.8s linear;
+    /* Firefox */
+    -webkit-transition: all 0.8s linear;
+    /*safari and chrome */
+}
+
+footer .listPartage li:hover {
+    background: none;
+    border-radius: none;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+footer .listPartage li a span.facebook {
+    color: #4C67A1;
+    font-size: normal;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    /* opera */
+    -ms-transition: all 0.3s linear;
+    /* IE 10 */
+    -moz-transition: all 0.3s linear;
+    /* Firefox */
+    -webkit-transition: all 0.3s linear;
+    /*safari and chrome */
+}
+
+footer .listPartage li a span.twitter {
+    color: #55ACEE;
+    font-size: normal;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    /* opera */
+    -ms-transition: all 0.3s linear;
+    /* IE 10 */
+    -moz-transition: all 0.3s linear;
+    /* Firefox */
+    -webkit-transition: all 0.3s linear;
+    /*safari and chrome */
+}
+
+footer .listPartage li a span.gglPlus {
+    color: #DD4F43;
+    font-size: normal;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    /* opera */
+    -ms-transition: all 0.3s linear;
+    /* IE 10 */
+    -moz-transition: all 0.3s linear;
+    /* Firefox */
+    -webkit-transition: all 0.3s linear;
+    /*safari and chrome */
+}
+
+footer .listPartage li a span:hover {
+    font-size: 1.8em;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    /* opera */
+    -ms-transition: all 0.3s linear;
+    /* IE 10 */
+    -moz-transition: all 0.3s linear;
+    /* Firefox */
+    -webkit-transition: all 0.3s linear;
+    /*safari and chrome */
 }

@@ -23,6 +23,8 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/mixitupAvis.js"></script>
 </head>
 
 <body>
@@ -216,52 +218,94 @@
                 <div class="col-xs-12 text-center">
                     <h2>Les avis</h2>
                 </div>
-                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
-                    <div class="row">
-                        <div class="media">
-                            <div class="media-left  media-middle">
-                                <img src="http://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:60px">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Jocelyn K. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
-                                <h5>Tucson, États-Unis - 3 Jan. 2017</h5>
-                                <p>Chambre spacieuse et propre, tres bonne literie. Repas de qualité et copieux. Le massage de 60 min est très agréable. Le petit déjeuner propose beaucoup de choix, du sucré et du salé de très bonne qualité. Le personnel est très accueillant et chaleureux. Hôtel qui merite amplement ses 5 étoiles.</p>
-                            </div>
+                <div class="row listAvis">
+                    <div class="hidden-xs col-sm-12 mb-20 text-center">
+                        <div class="btn-group" role="group" aria-label="Tri chambres">
+                            <button type="button" class="btn btn-primary" data-filter="all">Tous</button>
+                            <button type="button" class="btn btn-primary" data-filter=".chambres">Chambres</button>
+                            <button type="button" class="btn btn-primary" data-filter=".restaurant">Restaurant</button>
+                            <button type="button" class="btn btn-primary" data-filter=".soins">Soins</button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="media">
-                            <div class="media-left  media-middle">
-                                <img src="http://www.w3schools.com/bootstrap/img_avatar3.png" class="media-object" style="width:60px">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Bernard L. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h4>
-                                <h5>Dunkerque, France - 28 Déc. 2016</h5>
-                                <p>L'hôtel est idéalement situé, pratique pour visiter tout Paris à pied, de plus la vue est magnifique, nous avons bénéficié d'un surclassement l'hôtel n'étant pas plein au moment où nous y étions , cela est très agréable. L'accueil de la réceptionniste est parfait ainsi que les personnes du restaurant pour le petit déjeuner, seul point négatif pour ne pas dire excellent dommage que l'hôtel facture le parking 20 euros la nuit.</p>
-                            </div>
+                    <div class="visible-xs col-xs-12 mb-20 text-center">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-primary btn-xs" data-filter="all">Tous</button>
+                            <button type="button" class="btn btn-primary btn-xs" data-filter=".chambres">Chambres</button>
+                            <button type="button" class="btn btn-primary btn-xs" data-filter=".restaurant">Restaurant</button>
+                            <button type="button" class="btn btn-primary btn-xs" data-filter=".soins">Soins</button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="media">
-                            <div class="media-left  media-middle">
-                                <img src="http://www.w3schools.com/bootstrap/img_avatar4.png" class="media-object" style="width:60px">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Cristina G. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></h4>
-                                <h5>Madrid, Espagne - 19 Déc. 2016</h5>
-                                <p>Sadly only spent one night in this hotel while traveling to Paris from the Costa Blanca. The bed and pillows were genuinely the most comfortable I have ever slept in. We had interconnecting rooms which were very spacious and very well equipped. Superb food and wine in the restaurant, friendly service, great value for money and a well situated hotel. Well worth a visit. Next time we will stay longer.</p>
+                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                        <div class="row mb-20 mix chambres" data-order="1">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar3.png" class="media-object" style="width:60px">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Gaëtan.C <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
+                                    <h5>Bretagne, France - 5 Jan. 2017</h5>
+                                    <p>Une nuit passée dans la suite 601 qui est proche du paradis, une nuit fantastique, entre le jacuzzi, le champagne et le service d'étage au top. L'ambiance de cette suite et cette luminosité laisse place au rêve et au calme. Une suite romantique avec des petites attentions dont le personnel à la secret.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row mb-20">
-                        <div class="media">
-                            <div class="media-left  media-middle">
-                                <img src="http://www.w3schools.com/bootstrap/img_avatar2.png" class="media-object" style="width:60px">
+                        <div class="row mb-20 mix chambres" data-order="1">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar4.png" class="media-object" style="width:60px">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Jocelyn K. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
+                                    <h5>Auvergne, France - 4 Jan. 2017</h5>
+                                    <p>Nous avons pris une chambre la bas pour partager un week end en amoureux nous sommes très satisfaits ambiance intime et romantique avec les petites lumières partout dans la chambre et salle de bain, hôtel très agréable, jeune femme a l'accueil très aimable !! A refaire !!</p>
+                                </div>
                             </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Jacques M. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
-                                <h5>Cannes, France - 17 Déc. 2016</h5>
-                                <p>Parfaitement situé, le centre ville est accessible à pied. Confort très bon, pour ne pas dire irréprochable. Chambre spacieuse, très bien équipée, petit déjeuner excellent et varié. Ce n'est pas la peine de dépenser 20€ pour le parking, il y a de la place dans les rues autour.</p>
+                        </div>
+                        <div class="row mb-20 mix chambres soins restaurant" data-order="1">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:60px">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Jocelyn K. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
+                                    <h5>Tucson, États-Unis - 3 Jan. 2017</h5>
+                                    <p>Chambre spacieuse et propre, tres bonne literie. Repas de qualité et copieux. Le massage de 60 min est très agréable. Le petit déjeuner propose beaucoup de choix, du sucré et du salé de très bonne qualité. Le personnel est très accueillant et chaleureux. Hôtel qui merite amplement ses 5 étoiles.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-20 mix restaurant" data-order="1">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar3.png" class="media-object" style="width:60px">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Bernard L. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h4>
+                                    <h5>Dunkerque, France - 28 Déc. 2016</h5>
+                                    <p>L'hôtel est idéalement situé, pratique pour visiter tout Paris à pied, de plus la vue est magnifique, nous avons bénéficié d'un surclassement l'hôtel n'étant pas plein au moment où nous y étions , cela est très agréable. L'accueil de la réceptionniste est parfait ainsi que les personnes du restaurant pour le petit déjeuner, seul point négatif pour ne pas dire excellent dommage que l'hôtel facture le parking 20 euros la nuit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-20 mix chambres" data-order="1">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar4.png" class="media-object" style="width:60px">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Cristina G. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></h4>
+                                    <h5>Madrid, Espagne - 19 Déc. 2016</h5>
+                                    <p>Sadly only spent one night in this hotel while traveling to Paris from the Costa Blanca. The bed and pillows were genuinely the most comfortable I have ever slept in. We had interconnecting rooms which were very spacious and very well equipped. Superb food and wine in the restaurant, friendly service, great value for money and a well situated hotel. Well worth a visit. Next time we will stay longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-20 mix chambres restaurant" data-order="2">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar2.png" class="media-object" style="width:60px">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Jacques M. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
+                                    <h5>Cannes, France - 17 Déc. 2016</h5>
+                                    <p>Parfaitement situé, le centre ville est accessible à pied. Confort très bon, pour ne pas dire irréprochable. Chambre spacieuse, très bien équipée, petit déjeuner excellent et varié. Ce n'est pas la peine de dépenser 20€ pour le parking, il y a de la place dans les rues autour.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -356,6 +400,37 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-xs-12 text-center">
+                <ul class="listPartage">
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg facebook">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg twitter">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg gglPlus">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-google-plus fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 text-center">
+                <p class="text-muted">© 2017 Conception et réalisation par <a href="http://jeromelelievre.fr/">Jérôme LELIEVRE</a> dans le cadre d'un TP Front-End</p>
             </div>
         </footer>
     </div>
