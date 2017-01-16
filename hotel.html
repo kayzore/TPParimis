@@ -89,24 +89,24 @@
                     <li><a href="blog.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Actualités</a></li>
                     <li><a href="avis.html"><i class="fa fa-comments" aria-hidden="true"></i> Avis</a></li>
                     <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
-                    <ul class="nav navbar-nav navbar-right hidden-lg hidden-lg">
-                        <li>
-                            <a href="#"><img src="assets/img/fr.png" alt="French flags"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="assets/img/gb.png" alt="French flags"></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> Mon panier</a>
-                        </li>
-                    </ul>
-                    <form class="navbar-form navbar-right hidden-lg">
-                        <div class="form-group">
-                            <input type="text" class="form-control input-sm" placeholder="Rechercher">
-                        </div>
-                        <button type="submit" class="btn btn-default btn-sm">Rechercher</button>
-                    </form>
                 </ul>
+                <ul class="nav navbar-nav navbar-right hidden-lg hidden-lg">
+                    <li>
+                        <a href="#"><img src="assets/img/fr.png" alt="French flags"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/gb.png" alt="French flags"></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> Mon panier</a>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right hidden-lg">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-sm" placeholder="Rechercher">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-sm">Rechercher</button>
+                </form>
             </div>
         </div>
     </nav>
@@ -344,7 +344,7 @@
                     <li>Imprimer la page</li>
                     <li><a href="#" data-toggle="modal" data-target="#newsletter">S'inscrire à la newsletter</a></li>
                 </ul>
-                <div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="modalNewsletter">
+                <div class="modal fade" id="newsletter" tabindex="-1" role="dialog">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header text-center">
@@ -356,9 +356,9 @@
                                     <fieldset>
                                         <!-- Select Basic -->
                                         <div class="form-group">
-                                            <label class="col-md-4 control-label" for="selectbasic">Civilité</label>
+                                            <label class="col-md-4 control-label" for="selectCivNewsletter">Civilité</label>
                                             <div class="col-md-2">
-                                                <select id="selectbasic" name="selectbasic" class="form-control">
+                                                <select id="selectCivNewsletter" name="selectCivNewsletter" class="form-control">
                                                     <option value="1">Mr</option>
                                                     <option value="2">Mme</option>
                                                 </select>
@@ -367,33 +367,33 @@
 
                                         <!-- Text input-->
                                         <div class="form-group">
-                                            <label class="col-md-4 control-label" for="nom">Nom</label>
+                                            <label class="col-md-4 control-label" for="nomNewsletter">Nom</label>
                                             <div class="col-md-8">
-                                                <input id="nom" name="nom" placeholder="Votre nom" class="form-control input-md" required="" type="text">
+                                                <input id="nomNewsletter" name="nomNewsletter" placeholder="Votre nom" class="form-control input-md" required="" type="text">
                                             </div>
                                         </div>
 
                                         <!-- Text input-->
                                         <div class="form-group">
-                                            <label class="col-md-4 control-label" for="prenom">Votre prénom</label>
+                                            <label class="col-md-4 control-label" for="prenomNewsletter">Votre prénom</label>
                                             <div class="col-md-8">
-                                                <input id="prenom" name="prenom" placeholder="Votre prénom" class="form-control input-md" required="" type="text">
+                                                <input id="prenomNewsletter" name="prenomNewsletter" placeholder="Votre prénom" class="form-control input-md" required="" type="text">
                                             </div>
                                         </div>
 
                                         <!-- Text input-->
                                         <div class="form-group">
-                                            <label class="col-md-4 control-label" for="email">Email</label>
+                                            <label class="col-md-4 control-label" for="emailNewsletter">Email</label>
                                             <div class="col-md-8">
-                                                <input id="email" name="email" placeholder="Votre email" class="form-control input-md" required="" type="text">
+                                                <input id="emailNewsletter" name="emailNewsletter" placeholder="Votre email" class="form-control input-md" required="" type="text">
                                             </div>
                                         </div>
 
                                         <!-- Text input-->
                                         <div class="form-group">
-                                            <label class="col-md-4 control-label" for="emailconfirm">Email confirmation</label>
+                                            <label class="col-md-4 control-label" for="emailconfirmNewsletter">Email confirmation</label>
                                             <div class="col-md-8">
-                                                <input id="emailconfirm" name="emailconfirm" placeholder="Confirmation de votre email" class="form-control input-md" required="" type="text">
+                                                <input id="emailconfirmNewsletter" name="emailconfirmNewsletter" placeholder="Confirmation de votre email" class="form-control input-md" required="" type="text">
                                             </div>
                                         </div>
 
@@ -408,7 +408,7 @@
                                         <!-- Button -->
                                         <div class="form-group text-center">
                                             <div class="col-md-12">
-                                                <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Envoyer</button>
+                                                <button type="submit" id="btnSubmitNewsletter" name="btnSubmitNewsletter" class="btn btn-primary">Envoyer</button>
                                             </div>
                                         </div>
                                     </fieldset>
