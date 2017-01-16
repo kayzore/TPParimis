@@ -26,4 +26,9 @@ $(document).ready(function () {
             scrollTop: 0
         }, 1000);
     });
+
+
+    $('#printPage').click(function () {
+        window.print();
+    });
 });
