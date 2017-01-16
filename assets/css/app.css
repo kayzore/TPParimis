@@ -329,6 +329,10 @@ textarea {
     color: dimgray;
 }
 
+table tr td {
+    padding: 10px !important;
+}
+
 
 /* FOOTER */
 
