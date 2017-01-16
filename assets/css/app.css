@@ -314,6 +314,21 @@ textarea {
     color: dimgray;
 }
 
+#other {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 100;
+}
+
+#other ul li {
+    display: inline-block;
+}
+
+#other a:hover {
+    color: dimgray;
+}
+
 
 /* FOOTER */
 
