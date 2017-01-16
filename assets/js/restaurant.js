@@ -3,12 +3,12 @@ $(document).ready(function () {
     "use strict";
     var removeActive;
 
-    if ($(window).scrollTop() > 0) {
+    if ($(window).scrollTop() > 250) {
         $('aside>div').addClass('goAffixTop');
     }
 
     $(window).bind('scroll', function () {
-        var affixHeight = 300; // custom nav height
+        var affixHeight = 250; // custom nav height
         ($(window).scrollTop() > affixHeight) ? $('aside>div').addClass('goAffixTop'): $('aside>div').removeClass('goAffixTop');
     });
 

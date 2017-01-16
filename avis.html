@@ -26,6 +26,9 @@
 </head>
 
 <body>
+    <div id="btnGoTop">
+        <i class="fa fa-arrow-circle-up fa-5x" aria-hidden="true"></i>
+    </div>
     <header>
         <div class="row">
             <div class="col-xs-12 noPadding">
@@ -72,11 +75,11 @@
     </nav>
     <div class="container contentPage" role="main">
         <section class="col-xs-12">
-           <div class="row">
+            <div class="row">
                 <div class="col-xs-12 text-center">
                     <h2>Ajouter un avis</h2>
                 </div>
-           </div>
+            </div>
             <div class="row">
                 <form class="form-horizontal">
                     <fieldset>
@@ -87,7 +90,7 @@
                                 <input id="nom" name="nom" placeholder="Votre nom" class="form-control input-md" required="" type="text">
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label class="col-xs-12 col-md-2 col-md-offset-2 control-label" for="prenom">Prenom</label>
                             <div class="col-xs-12 col-md-3">
@@ -101,7 +104,7 @@
                                 <input id="pays" name="pays" placeholder="Votre pays" class="form-control input-md" required="" type="text">
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label class="col-xs-12 col-md-2 col-md-offset-2 control-label" for="dateArrivee">Date d'arrivée</label>
                             <div class="col-xs-12 col-md-3">
@@ -131,7 +134,10 @@
                                     <option value="5">5/5</option>
                                 </select>
                             </div>
-                            <label class="col-xs-12 col-md-1 control-label" for="spa">Spa</label>
+                        </div>
+                        <div class="form-group">
+
+                            <label class="col-xs-12 col-md-1 col-md-offset-3 control-label" for="spa">Spa</label>
                             <div class="col-xs-12 col-md-2">
                                 <select id="spa" name="spa" class="form-control">
                                     <option value="1">1/5</option>
@@ -142,7 +148,7 @@
                                 </select>
                             </div>
                         </div>
-                           
+
                         <!-- Text input-->
                         <div class="form-group">
                             <label class="col-xs-12 col-md-2 col-md-offset-2 control-label" for="sujet">Sujet</label>

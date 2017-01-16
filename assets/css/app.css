@@ -207,7 +207,9 @@ header img {
     font-weight: bold;
 }
 
-.fa-star, .fa-star-half-o, .fa-star-o {
+.fa-star,
+.fa-star-half-o,
+.fa-star-o {
     color: #E2BB49;
 }
 
@@ -298,6 +300,20 @@ textarea {
     transition: all 0.3s linear;
 }
 
+#btnGoTop {
+    display: none;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#btnGoTop:hover {
+    transition: all 0.5s linear;
+    color: dimgray;
+}
+
 
 /* FOOTER */
 
@@ -309,7 +325,7 @@ footer>div>ul>li {
     display: inline-block;
     margin: 0 10px;
     padding: 10px;
- }
+}
 
 footer>div>ul>li:hover {
     background: darkgrey;

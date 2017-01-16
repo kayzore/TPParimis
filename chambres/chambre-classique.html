@@ -24,11 +24,14 @@
     <script src="../assets/js/plugins/jquery.cycle.all.js"></script>
     <script src="../assets/js/navbar.js"></script>
     <script src="../assets/js/dropdown.js"></script>
-    <script src="../assets/js/chambres-cycle-slide.js"></script>
+    <script src="../assets/js/carousel.js"></script>
     <script src="../assets/js/resa-gamme.js"></script>
 </head>
 
 <body>
+    <div id="btnGoTop">
+        <i class="fa fa-arrow-circle-up fa-5x" aria-hidden="true"></i>
+    </div>
     <header>
         <div class="row">
             <div class="col-xs-12 noPadding">
@@ -79,7 +82,7 @@
                 <h2 class="noMargin">Chambre Classique</h2>
             </div>
             <div class="row mx-20">
-                <div class="col-md-7">
+                <div class="col-xs-12 col-sm-7">
                     <p>
                         Les chambres Classique de 20 m², extrêmement confortables et raffinées vous offrent une vue sur notre cour intérieure fleurie. Calmes et relaxantes, les chambres Classique vous séduiront par leur décor contemporain.
                         <br> Les chambres Classique sont prolongées d’une pièce d’eau en mosaïque, avec Douche et vasque.
@@ -101,26 +104,42 @@
                         <br> - Accès internet haut debit offert sans fil.
                     </p>
                 </div>
-                <div class="col-md-4 pull-right mr-20 text-center">
-                    <div class="row">
-                        <div id="listImageChambre" class="col-xs-12 listImageChambre">
-                            <img src="../assets/img/classique.jpg" class="img-responsive" alt="Chambre Classique">
-                            <img src="../assets/img/classique2.jpg" class="img-responsive" alt="Chambre Classique">
-                            <img src="../assets/img/classique3.jpg" class="img-responsive" alt="Chambre Classique">
+                <div class="col-xs-12 col-sm-5 text-center">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="../assets/img/classique.jpg" class="img-responsive" alt="Chambre Classique">
+                            </div>
+                            <div class="item">
+                                <img src="../assets/img/classique2.jpg" class="img-responsive" alt="Chambre Classique">
+                            </div>
+                            <div class="item">
+                                <img src="../assets/img/classique3.jpg" class="img-responsive" alt="Chambre Classique">
+                            </div>
                         </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
 
-                    <div class="row hidden-xs" style="margin-top:200px">
-                        <div class="col-xs-12">
-                            <p class="listChambrePrice">A partir de 203 €</p>
-                            <a href="../reservation.html" class="btn btn-primary" data-gamme="classique" id="linkResa"><i class="fa fa-calendar" aria-hidden="true"></i> Réserver dans cette gamme</a>
-                        </div>
-                    </div>
-                    <div class="row visible-xs" style="margin-top:10px">
-                        <div class="col-xs-12">
-                            <p class="listChambrePrice">A partir de 203 €</p>
-                            <a href="../reservation.html" class="btn btn-primary" data-gamme="classique" id="linkResa"><i class="fa fa-calendar" aria-hidden="true"></i> Réserver dans cette gamme</a>
-                        </div>
+                    <div class="row margin-10">
+                        <p class="listChambrePrice">A partir de 203 €</p>
+                        <a href="../reservation.html" class="btn btn-primary" data-gamme="classique" id="linkResa"><i class="fa fa-calendar" aria-hidden="true"></i> Réserver dans cette gamme</a>
                     </div>
                 </div>
             </div>
