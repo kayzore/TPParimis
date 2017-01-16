@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="hotel luxe 5 etoiles parimis palace paris 8" />
-    <meta name="description" content="Parimis est un hôtel spa et restaurant 5 étoiles situé dans le 8ème arrondissement de Paris" />
+    <meta name="keywords" content="hotel luxe 5 etoiles parimis palace paris 8 avis clients" />
+    <meta name="description" content="Parimis est un hôtel spa et restaurant 5 étoiles situé dans le 8ème arrondissement de Paris - avis clients" />
     <meta name="author" content="Jerome Lelievre" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Parimis hôtel, spa, restaurant - Avis</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
@@ -23,9 +24,36 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/mixitupAvis.js"></script>
 </head>
 
 <body>
+    <!-- Bouton pour remonter -->
+    <div id="btnGoTop">
+        <i class="fa fa-arrow-circle-up fa-5x" aria-hidden="true"></i>
+    </div>
+    <!-- Zone de langue et recherche -->
+    <div id="other" class="hidden-xs hidden-sm hidden-md">
+        <ul>
+            <li>
+                <a href="#"><img src="assets/img/fr.png" alt="French flags"></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/img/gb.png" alt="French flags"></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> Mon panier</a>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control input-sm" placeholder="Rechercher">
+            </div>
+            <button type="submit" class="btn btn-default btn-sm">Rechercher</button>
+        </form>
+    </div>
+    <!-- header -->
     <header>
         <div class="row">
             <div class="col-xs-12 noPadding">
@@ -35,6 +63,7 @@
             </div>
         </div>
     </header>
+    <!-- navigation menu  -->
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
@@ -67,16 +96,34 @@
                     <li class="active"><a href="avis.html"><i class="fa fa-comments" aria-hidden="true"></i> Avis</a></li>
                     <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right hidden-lg hidden-lg">
+                    <li>
+                        <a href="#"><img src="assets/img/fr.png" alt="French flags"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/gb.png" alt="French flags"></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> Mon panier</a>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right hidden-lg">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-sm" placeholder="Rechercher">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-sm">Rechercher</button>
+                </form>
             </div>
         </div>
     </nav>
+    <!-- content page -->
     <div class="container contentPage" role="main">
         <section class="col-xs-12">
-           <div class="row">
+            <div class="row">
                 <div class="col-xs-12 text-center">
                     <h2>Ajouter un avis</h2>
                 </div>
-           </div>
+            </div>
             <div class="row">
                 <form class="form-horizontal">
                     <fieldset>
@@ -87,7 +134,7 @@
                                 <input id="nom" name="nom" placeholder="Votre nom" class="form-control input-md" required="" type="text">
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label class="col-xs-12 col-md-2 col-md-offset-2 control-label" for="prenom">Prenom</label>
                             <div class="col-xs-12 col-md-3">
@@ -101,7 +148,7 @@
                                 <input id="pays" name="pays" placeholder="Votre pays" class="form-control input-md" required="" type="text">
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label class="col-xs-12 col-md-2 col-md-offset-2 control-label" for="dateArrivee">Date d'arrivée</label>
                             <div class="col-xs-12 col-md-3">
@@ -111,9 +158,9 @@
 
                         <!-- Select Basic -->
                         <div class="form-group">
-                            <label class="col-xs-12 col-md-1 col-md-offset-3 control-label" for="selectbasic">Chambres</label>
+                            <label class="col-xs-12 col-md-1 col-md-offset-3 control-label" for="selectChambre">Chambres</label>
                             <div class="col-xs-12 col-md-2">
-                                <select id="selectbasic" name="selectbasic" class="form-control">
+                                <select id="selectChambre" name="selectChambre" class="form-control">
                                     <option value="1">1/5</option>
                                     <option value="2">2/5</option>
                                     <option value="3">3/5</option>
@@ -131,7 +178,10 @@
                                     <option value="5">5/5</option>
                                 </select>
                             </div>
-                            <label class="col-xs-12 col-md-1 control-label" for="spa">Spa</label>
+                        </div>
+                        <div class="form-group">
+
+                            <label class="col-xs-12 col-md-1 col-md-offset-3 control-label" for="spa">Spa</label>
                             <div class="col-xs-12 col-md-2">
                                 <select id="spa" name="spa" class="form-control">
                                     <option value="1">1/5</option>
@@ -142,7 +192,7 @@
                                 </select>
                             </div>
                         </div>
-                           
+
                         <!-- Text input-->
                         <div class="form-group">
                             <label class="col-xs-12 col-md-2 col-md-offset-2 control-label" for="sujet">Sujet</label>
@@ -174,52 +224,94 @@
                 <div class="col-xs-12 text-center">
                     <h2>Les avis</h2>
                 </div>
-                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
-                    <div class="row">
-                        <div class="media">
-                            <div class="media-left  media-middle">
-                                <img src="http://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:60px">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Jocelyn K. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
-                                <h5>Tucson, États-Unis - 3 Jan. 2017</h5>
-                                <p>Chambre spacieuse et propre, tres bonne literie. Repas de qualité et copieux. Le massage de 60 min est très agréable. Le petit déjeuner propose beaucoup de choix, du sucré et du salé de très bonne qualité. Le personnel est très accueillant et chaleureux. Hôtel qui merite amplement ses 5 étoiles.</p>
-                            </div>
+                <div class="row listAvis">
+                    <div class="hidden-xs col-sm-12 mb-20 text-center">
+                        <div class="btn-group" role="group" aria-label="Tri chambres">
+                            <button type="button" class="btn btn-primary" data-filter="all">Tous</button>
+                            <button type="button" class="btn btn-primary" data-filter=".chambres">Chambres</button>
+                            <button type="button" class="btn btn-primary" data-filter=".restaurant">Restaurant</button>
+                            <button type="button" class="btn btn-primary" data-filter=".soins">Soins</button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="media">
-                            <div class="media-left  media-middle">
-                                <img src="http://www.w3schools.com/bootstrap/img_avatar3.png" class="media-object" style="width:60px">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Bernard L. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h4>
-                                <h5>Dunkerque, France - 28 Déc. 2016</h5>
-                                <p>L'hôtel est idéalement situé, pratique pour visiter tout Paris à pied, de plus la vue est magnifique, nous avons bénéficié d'un surclassement l'hôtel n'étant pas plein au moment où nous y étions , cela est très agréable. L'accueil de la réceptionniste est parfait ainsi que les personnes du restaurant pour le petit déjeuner, seul point négatif pour ne pas dire excellent dommage que l'hôtel facture le parking 20 euros la nuit.</p>
-                            </div>
+                    <div class="visible-xs col-xs-12 mb-20 text-center">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-primary btn-xs" data-filter="all">Tous</button>
+                            <button type="button" class="btn btn-primary btn-xs" data-filter=".chambres">Chambres</button>
+                            <button type="button" class="btn btn-primary btn-xs" data-filter=".restaurant">Restaurant</button>
+                            <button type="button" class="btn btn-primary btn-xs" data-filter=".soins">Soins</button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="media">
-                            <div class="media-left  media-middle">
-                                <img src="http://www.w3schools.com/bootstrap/img_avatar4.png" class="media-object" style="width:60px">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Cristina G. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></h4>
-                                <h5>Madrid, Espagne - 19 Déc. 2016</h5>
-                                <p>Sadly only spent one night in this hotel while traveling to Paris from the Costa Blanca. The bed and pillows were genuinely the most comfortable I have ever slept in. We had interconnecting rooms which were very spacious and very well equipped. Superb food and wine in the restaurant, friendly service, great value for money and a well situated hotel. Well worth a visit. Next time we will stay longer.</p>
+                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                        <div class="row mb-20 mix chambres" data-order="1">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar3.png" class="media-object" style="width:60px" alt="Avatar">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Gaëtan.C <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
+                                    <h5>Bretagne, France - 5 Jan. 2017</h5>
+                                    <p>Une nuit passée dans la suite 601 qui est proche du paradis, une nuit fantastique, entre le jacuzzi, le champagne et le service d'étage au top. L'ambiance de cette suite et cette luminosité laisse place au rêve et au calme. Une suite romantique avec des petites attentions dont le personnel à la secret.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row mb-20">
-                        <div class="media">
-                            <div class="media-left  media-middle">
-                                <img src="http://www.w3schools.com/bootstrap/img_avatar2.png" class="media-object" style="width:60px">
+                        <div class="row mb-20 mix chambres" data-order="1">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar4.png" class="media-object" style="width:60px" alt="Avatar">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Jocelyn K. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
+                                    <h5>Auvergne, France - 4 Jan. 2017</h5>
+                                    <p>Nous avons pris une chambre la bas pour partager un week end en amoureux nous sommes très satisfaits ambiance intime et romantique avec les petites lumières partout dans la chambre et salle de bain, hôtel très agréable, jeune femme a l'accueil très aimable !! A refaire !!</p>
+                                </div>
                             </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Jacques M. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
-                                <h5>Cannes, France - 17 Déc. 2016</h5>
-                                <p>Parfaitement situé, le centre ville est accessible à pied. Confort très bon, pour ne pas dire irréprochable. Chambre spacieuse, très bien équipée, petit déjeuner excellent et varié. Ce n'est pas la peine de dépenser 20€ pour le parking, il y a de la place dans les rues autour.</p>
+                        </div>
+                        <div class="row mb-20 mix chambres soins restaurant" data-order="1">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:60px" alt="Avatar">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Jocelyn K. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
+                                    <h5>Tucson, États-Unis - 3 Jan. 2017</h5>
+                                    <p>Chambre spacieuse et propre, tres bonne literie. Repas de qualité et copieux. Le massage de 60 min est très agréable. Le petit déjeuner propose beaucoup de choix, du sucré et du salé de très bonne qualité. Le personnel est très accueillant et chaleureux. Hôtel qui merite amplement ses 5 étoiles.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-20 mix restaurant" data-order="1">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar3.png" class="media-object" style="width:60px" alt="Avatar">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Bernard L. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h4>
+                                    <h5>Dunkerque, France - 28 Déc. 2016</h5>
+                                    <p>L'hôtel est idéalement situé, pratique pour visiter tout Paris à pied, de plus la vue est magnifique, nous avons bénéficié d'un surclassement l'hôtel n'étant pas plein au moment où nous y étions , cela est très agréable. L'accueil de la réceptionniste est parfait ainsi que les personnes du restaurant pour le petit déjeuner, seul point négatif pour ne pas dire excellent dommage que l'hôtel facture le parking 20 euros la nuit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-20 mix chambres" data-order="1">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar4.png" class="media-object" style="width:60px" alt="Avatar">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Cristina G. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></h4>
+                                    <h5>Madrid, Espagne - 19 Déc. 2016</h5>
+                                    <p>Sadly only spent one night in this hotel while traveling to Paris from the Costa Blanca. The bed and pillows were genuinely the most comfortable I have ever slept in. We had interconnecting rooms which were very spacious and very well equipped. Superb food and wine in the restaurant, friendly service, great value for money and a well situated hotel. Well worth a visit. Next time we will stay longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-20 mix chambres restaurant" data-order="2">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://www.w3schools.com/bootstrap/img_avatar2.png" class="media-object" style="width:60px" alt="Avatar">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Jacques M. <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h4>
+                                    <h5>Cannes, France - 17 Déc. 2016</h5>
+                                    <p>Parfaitement situé, le centre ville est accessible à pied. Confort très bon, pour ne pas dire irréprochable. Chambre spacieuse, très bien équipée, petit déjeuner excellent et varié. Ce n'est pas la peine de dépenser 20€ pour le parking, il y a de la place dans les rues autour.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -228,16 +320,124 @@
         </section>
     </div>
     <hr class="style-three">
+    <!-- footer -->
     <div class="container" role="contentinfo">
         <footer>
             <div class="col-md-12">
                 <ul>
-                    <li>Mentions Légales</li>
-                    <li>Conditions Générales de Vente</li>
-                    <li>Plan du site</li>
-                    <li>Imprimer la page</li>
-                    <li>S'inscrire à la newsletter</li>
+                    <li><a href="mentionslegales.html">Mentions Légales</a></li>
+                    <li><a href="cgv.html">CGV</a></li>
+                    <li><a href="plandusite.html">Plan du site</a></li>
+                    <li><a href="#" id="printPage">Imprimer la page</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#newsletter">S'inscrire à la newsletter</a></li>
                 </ul>
+                <div class="modal fade" id="newsletter" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">S'inscrire à la newsletter</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <!-- Select Basic -->
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="selectCiv">Civilité</label>
+                                            <div class="col-md-2">
+                                                <select id="selectCiv" name="selectCiv" class="form-control">
+                                                    <option value="1">Mr</option>
+                                                    <option value="2">Mme</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="footerNom">Nom</label>
+                                            <div class="col-md-8">
+                                                <input id="footerNom" name="footerNom" placeholder="Votre nom" class="form-control input-md" required="" type="text">
+                                            </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="footerPrenom">Votre prénom</label>
+                                            <div class="col-md-8">
+                                                <input id="footerPrenom" name="footerPrenom" placeholder="Votre prénom" class="form-control input-md" required="" type="text">
+                                            </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="email">Email</label>
+                                            <div class="col-md-8">
+                                                <input id="email" name="email" placeholder="Votre email" class="form-control input-md" required="" type="text">
+                                            </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="emailconfirm">Email confirmation</label>
+                                            <div class="col-md-8">
+                                                <input id="emailconfirm" name="emailconfirm" placeholder="Confirmation de votre email" class="form-control input-md" required="" type="text">
+                                            </div>
+                                        </div>
+
+                                        <!-- Multiple Checkboxes (inline) -->
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="partenaire">Newsletter partenaires</label>
+                                            <div class="col-md-4">
+                                                <input name="partenaire" id="partenaire" value="1" type="checkbox">
+                                            </div>
+                                        </div>
+
+                                        <!-- Button -->
+                                        <div class="form-group text-center">
+                                            <div class="col-md-12">
+                                                <button type="submit" id="newsletterSubmit" name="newsletterSubmit" class="btn btn-primary">Envoyer</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 text-center">
+                <ul class="listPartage">
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg facebook">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg twitter">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg gglPlus">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-google-plus fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 text-center">
+                <p class="text-muted">© 2017 Conception et réalisation par <a href="http://jeromelelievre.fr/">Jérôme LELIEVRE</a> dans le cadre d'un TP Front-End</p>
             </div>
         </footer>
     </div>

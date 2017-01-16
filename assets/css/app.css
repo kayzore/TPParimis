@@ -51,6 +51,10 @@ h6 {
     margin-right: 20px;
 }
 
+.ml-20 {
+    margin-left: 20px;
+}
+
 .mx-20 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -207,7 +211,9 @@ header img {
     font-weight: bold;
 }
 
-.fa-star, .fa-star-half-o, .fa-star-o {
+.fa-star,
+.fa-star-half-o,
+.fa-star-o {
     color: #E2BB49;
 }
 
@@ -296,6 +302,55 @@ textarea {
 .link-custom:hover {
     background: #E2BB49;
     transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    /* opera */
+    -ms-transition: all 0.3s linear;
+    /* IE 10 */
+    -moz-transition: all 0.3s linear;
+    /* Firefox */
+    -webkit-transition: all 0.3s linear;
+    /*safari and chrome */
+}
+
+#btnGoTop {
+    display: none;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#btnGoTop:hover {
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    /* opera */
+    -ms-transition: all 0.5s linear;
+    /* IE 10 */
+    -moz-transition: all 0.5s linear;
+    /* Firefox */
+    -webkit-transition: all 0.5s linear;
+    /*safari and chrome */
+    color: dimgray;
+}
+
+#other {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 100;
+}
+
+#other ul li {
+    display: inline-block;
+}
+
+#other a:hover {
+    color: dimgray;
+}
+
+table tr td {
+    padding: 10px !important;
 }
 
 
@@ -309,7 +364,7 @@ footer>div>ul>li {
     display: inline-block;
     margin: 0 10px;
     padding: 10px;
- }
+}
 
 footer>div>ul>li:hover {
     background: darkgrey;
@@ -320,4 +375,76 @@ footer>div>ul>li:hover {
     -moz-box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
     box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.75);
     transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    /* opera */
+    -ms-transition: all 0.8s linear;
+    /* IE 10 */
+    -moz-transition: all 0.8s linear;
+    /* Firefox */
+    -webkit-transition: all 0.8s linear;
+    /*safari and chrome */
+}
+
+footer .listPartage li:hover {
+    background: none;
+    border-radius: none;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+footer .listPartage li a span.facebook {
+    color: #4C67A1;
+    font-size: normal;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    /* opera */
+    -ms-transition: all 0.3s linear;
+    /* IE 10 */
+    -moz-transition: all 0.3s linear;
+    /* Firefox */
+    -webkit-transition: all 0.3s linear;
+    /*safari and chrome */
+}
+
+footer .listPartage li a span.twitter {
+    color: #55ACEE;
+    font-size: normal;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    /* opera */
+    -ms-transition: all 0.3s linear;
+    /* IE 10 */
+    -moz-transition: all 0.3s linear;
+    /* Firefox */
+    -webkit-transition: all 0.3s linear;
+    /*safari and chrome */
+}
+
+footer .listPartage li a span.gglPlus {
+    color: #DD4F43;
+    font-size: normal;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    /* opera */
+    -ms-transition: all 0.3s linear;
+    /* IE 10 */
+    -moz-transition: all 0.3s linear;
+    /* Firefox */
+    -webkit-transition: all 0.3s linear;
+    /*safari and chrome */
+}
+
+footer .listPartage li a span:hover {
+    font-size: 1.8em;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    /* opera */
+    -ms-transition: all 0.3s linear;
+    /* IE 10 */
+    -moz-transition: all 0.3s linear;
+    /* Firefox */
+    -webkit-transition: all 0.3s linear;
+    /*safari and chrome */
 }

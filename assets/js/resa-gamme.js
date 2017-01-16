@@ -4,8 +4,10 @@ $(document).ready(function () {
     var gamme = "",
         i,
         interrogation = false;
-    
+
+    // Si la page courante n'est pas reservation.html
     if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) !== "reservation.html") {
+        // Alors on ecoute le click sur le btn #linkResa et on redirige en simulant un $_GET PHP
         $('#linkResa').click(function (evt) {
             var source = evt.target || evt.srcElement;
             evt.preventDefault();
@@ -13,6 +15,7 @@ $(document).ready(function () {
             window.location.assign("../reservation.html?gamme=" + gamme);
         });
     } else {
+        // Sinon on recupere ($_GET) la gamme
         for (i = 0; i < location.search.length; i += 1) {
             if (location.search[i] === "=") {
                 interrogation = true;
@@ -20,7 +23,9 @@ $(document).ready(function () {
                 gamme += location.search[i];
             }
         }
-        
+
+        // Si elle existe on ajuste le select
+
         if (gamme === "classique") {
             $('#selectGammeBedroom').val(1);
         } else if (gamme === "confort") {

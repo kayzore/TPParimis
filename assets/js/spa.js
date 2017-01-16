@@ -3,15 +3,21 @@ $(document).ready(function () {
     "use strict";
     var removeActive;
 
-    if ($(window).scrollTop() > 0) {
+    if ($(window).scrollTop() > 250) {
         $('aside>div').addClass('goAffixTop');
     }
 
+    // Gestion du fixe pour la zone de menu aside
     $(window).bind('scroll', function () {
-        var affixHeight = 300; // custom nav height
-        ($(window).scrollTop() > affixHeight) ? $('aside>div').addClass('goAffixTop'): $('aside>div').removeClass('goAffixTop');
+        var affixHeight = 250; // custom height position
+        if ($(window).scrollTop() > affixHeight) {
+            $('aside>div').addClass('goAffixTop');
+        } else {
+            $('aside>div').removeClass('goAffixTop');
+        }
     });
 
+    // Gestion des scrolls vers les cartes du restaurant
     $('a#btnSoinsDetente').click(function (evt) {
         evt.preventDefault();
         removeActive();
