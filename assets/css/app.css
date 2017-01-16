@@ -336,9 +336,14 @@ textarea {
 
 #other {
     position: fixed;
-    top: 25px;
-    right: 25px;
+    top: 50px;
+    right: -310px;
+    padding: 25px;
     z-index: 100;
+    background-color: #265A88;
+    opacity: 0.5;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #other ul li {
@@ -347,6 +352,12 @@ textarea {
 
 #other a:hover {
     color: dimgray;
+}
+
+#other #arrowRight {
+    position: absolute;
+    top: 20px;
+    left: -51px;
 }
 
 table tr td {
